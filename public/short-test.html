@@ -1,0 +1,37 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Short Test</title>
+
+        <link rel="stylesheet" href="./CSS/test.css" />
+    </head>
+    <body>
+        <h1>US Citizenship Short 10 Question Test</h1>
+        <h2>Question: Loading...</h2>
+        <div class="answer-container"></div>
+
+        <div class="button-container">
+            <button id="submit" onclick="checkAnswer()">Submit</button>
+            <button id="next" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <br />
+
+        <div class="answer-check">
+            <p id="answer-check-text">Correct Answers:</p>
+        </div>
+        
+        <br />
+
+        <a href="/">Home</a>
+
+        <script src="./Scripts/fetchTest.js"></script>
+        <script>
+            fetchTest(false).then((response) => {
+                data = response;
+                nextQuestion();
+            });
+        </script>
+    </body>
+</html>
