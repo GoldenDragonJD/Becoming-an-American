@@ -1,7 +1,7 @@
 async function fetchTest(fetchFull = true) {
-    const response = await fetch('/full-database');
+    const response = fetchFull ? await fetch('/full-database') : await fetch('/partial-database');
     const data = await response.json();
-    return data;
+    return data.data;
 }
 
 let currentQuestion = "";
@@ -47,6 +47,7 @@ function nextQuestion() {
     }
 
     document.querySelector("#next").style.display = "none";
+    document.querySelector(".answer-check").style.display = "none";
 
     currentData = data.shift();
     currentQuestion = currentData.question;

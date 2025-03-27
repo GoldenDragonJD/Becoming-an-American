@@ -165,7 +165,7 @@
         "id": 27,
         "question": "What is the name of the President of the United States now?",
         "answers_count": 1,
-        "answers": ["Donal Trump", "Donald J. Trump"]
+        "answers": ["Donald Trump", "Donald J. Trump"]
     },
     {
         "id": 28,
@@ -273,13 +273,13 @@
         "id": 45,
         "question": "What is the political party of the President now?",
         "answers_count": 1,
-        "answers": ["Democratic Party"]
+        "answers": ["Republican Party"]
     },
     {
         "id": 46,
         "question": "What is the name of the Speaker of the House of Representatives now?",
         "answers_count": 1,
-        "answers": ["Kevin McCarthy"]
+        "answers": ["Mike Johnson"]
     },
     {
         "id": 47,
